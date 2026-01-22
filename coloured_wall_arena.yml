@@ -1,0 +1,106 @@
+!ArenaConfig
+arenas:
+ # This arena tests the agent by showing a goal though a transparent wall, the agent must then go the right way.
+  0: !Arena
+    passMark: 0
+    timeLimit: 800
+    items:
+    - !Item
+      name: Agent
+      positions:
+      - !Vector3 {x: 38, y: 0, z: 26}
+      rotations: [270]
+    - !Item
+      name: GoodGoal
+      positions:
+      - !Vector3 {x: 5, y: 0, z: 15}
+      rotations: [0]
+    - !Item
+      name: WallTransparent
+      rotations: [0]
+      positions:
+      - !Vector3 {x: 7.5, y: 0.0, z: 10}
+      sizes:
+      - !Vector3 {x: 15.0, y: 5.0, z: 2.0}
+    - !Item
+      name: Wall
+      positions:
+      - !Vector3 {x: 15.0, y: 0.0, z: 26.0}
+      sizes:
+      - !Vector3 {x: 2.0, y: 5.0, z: 24.0}
+      colors:
+      - !RGB {r: 255, g: 0, b: 0}
+      rotations: [0]
+
+    - !Item
+      name: Wall
+      positions:
+      - !Vector3 {x: 25.0, y: 0.0, z: 10.0}
+      - !Vector3 {x: 34.0, y: 0.0, z: 35.0}
+      - !Vector3 {x: 34.0, y: 0.0, z: 16.0}
+      - !Vector3 {x: 7.0, y: 0.0, z: 26.0}
+      rotations: [0, 0, 0, 0]
+      sizes:
+      - !Vector3 {x: 20.0, y: 5.0, z: 2.0}
+      - !Vector3 {x: 2.0, y: 5.0, z: 10.0}
+      - !Vector3 {x: 2.0, y: 5.0, z: 10.0}
+      - !Vector3 {x: 14.0, y: 1.0, z: 2.0}
+    - !Item
+      name: Wall
+      positions:
+      - !Vector3 {x: 7.5, y: 0.0, z: 4.5}
+      rotations: [0]
+      sizes:
+      - !Vector3 {x: 15.0, y: 4.0, z: 9.0}
+
+  1: !Arena
+    passMark: 0
+    timeLimit: 800
+    items:
+    - !Item
+      name: Agent
+      positions:
+      - !Vector3 {x: 38, y: 0, z: 26}
+      rotations: [270]
+    - !Item
+      name: GoodGoal
+      positions:
+      - !Vector3 {x: 5, y: 0, z: 35}
+      rotations: [0]
+    - !Item
+      name: WallTransparent
+      rotations: [0]
+      positions:
+      - !Vector3 {x: 7.5, y: 0.0, z: 10}
+      sizes:
+      - !Vector3 {x: 15.0, y: 5.0, z: 2.0}
+    - !Item
+      name: Wall
+      positions:
+      - !Vector3 {x: 15.0, y: 0.0, z: 26.0}
+      sizes:
+      - !Vector3 {x: 2.0, y: 5.0, z: 24.0}
+      colors:
+      - !RGB {r: 0, g: 0, b: 255}
+      rotations: [0]
+
+    - !Item
+      name: Wall
+      positions:
+      - !Vector3 {x: 25.0, y: 0.0, z: 10.0}
+      - !Vector3 {x: 34.0, y: 0.0, z: 35.0}
+      - !Vector3 {x: 34.0, y: 0.0, z: 16.0}
+      - !Vector3 {x: 7.0, y: 0.0, z: 26.0}
+      rotations: [0, 0, 0, 0]
+      sizes:
+      - !Vector3 {x: 20.0, y: 5.0, z: 2.0}
+      - !Vector3 {x: 2.0, y: 5.0, z: 10.0}
+      - !Vector3 {x: 2.0, y: 5.0, z: 10.0}
+      - !Vector3 {x: 14.0, y: 1.0, z: 2.0}
+    - !Item
+      name: Wall
+      positions:
+      - !Vector3 {x: 7.5, y: 0.0, z: 4.5}
+      rotations: [0]
+      sizes:
+      - !Vector3 {x: 15.0, y: 4.0, z: 9.0}
